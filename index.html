@@ -7,20 +7,23 @@
 
             <div>
                 <label for="startDate">Start date:</label>
-                <input type="date" id="startDate" name="startDate" />
+                <input type="date" id="startDate" name="startDate" onchange="render()" />
             </div>
 
             <div>
                 <label for="numberOfDays">Number of days:</label>
-                <input type="number" name="numberOfDays" />
+                <input type="number" name="numberOfDays" onchange="render()" />
             </div>
 
             <div>
                 <label for="country">Country:</label>
-                <input type="text" id="country" name="country" maxlength="2" />
+                <input type="text" id="country" name="country" maxlength="2" onchange="render()" />
             </div>
         </fieldset>
+        <div id="theCalendar" style="display: none">calendar</div>
     </form>
 </body>
+
+<script src="calendar.js"></script>
 
 </html>
