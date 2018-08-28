@@ -1,6 +1,6 @@
 <html>
 
-<body>
+<body onload="render()">
     <form action="/vacation" method="POST">
         <fieldset>
             <legend>Vacation form:</legend>
@@ -20,10 +20,12 @@
                 <input type="text" id="country" name="country" maxlength="2" onchange="render()" />
             </div>
         </fieldset>
-        <div id="theCalendar" style="display: none">calendar</div>
+        <div id="theCalendar"></div>
     </form>
 </body>
 
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+<link rel="stylesheet" href="calendar.css">
 <script src="calendar.js"></script>
 
 </html>
